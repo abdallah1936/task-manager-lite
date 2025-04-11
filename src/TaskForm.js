@@ -35,19 +35,19 @@ const TaskForm = ({ addTask }) => {
     <form className="task-form" onSubmit={handleSubmit}>
       <input 
         type="text" 
-        placeholder="Task Title (required)" 
+        placeholder="Task Title" 
         value={title} 
         onChange={(e) => setTitle(e.target.value)} 
         required 
       />
       <textarea 
-        placeholder="Description (optional)" 
+        placeholder="Description" 
         value={description} 
         onChange={(e) => setDescription(e.target.value)}
       />
       <input 
         type="number" 
-        placeholder="Priority (e.g., 1)" 
+        placeholder="" 
         value={priority} 
         onChange={(e) => setPriority(e.target.value)} 
         min="1"
