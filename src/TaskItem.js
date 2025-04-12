@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaskItem.css';
 
-const TaskItem = ({ task, deleteTask, toggleComplete }) => {
+const TaskItem = ({ task, archiveTask, toggleComplete }) => {
   return (
     <li className={`task-item ${task.completed ? 'completed' : ''}`}>
       <div className="task-details">
@@ -17,7 +17,9 @@ const TaskItem = ({ task, deleteTask, toggleComplete }) => {
         <button onClick={() => toggleComplete(task.id)}>
           {task.completed ? 'Undo' : 'Complete'}
         </button>
-        <button onClick={() => deleteTask(task.id)}>Delete</button>
+        <button onClick={() => archiveTask(task.id)}>
+          Archive
+        </button>
       </div>
     </li>
   );

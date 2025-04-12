@@ -9,11 +9,12 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+/* Main container styling */
 .App {
   max-width: 800px;
   margin: 40px auto;
@@ -21,4 +22,24 @@ body {
   padding: 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* Toggle button to switch views */
+.toggle-view-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-view-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
 }
